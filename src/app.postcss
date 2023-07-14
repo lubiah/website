@@ -3,11 +3,43 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --font-size-base: clamp(1rem, 0.23vw + 0.94rem, 1.13rem);
+  --font-size-h4: clamp(1.25rem, 0.28vw + 1.18rem, 1.41rem);
+  --font-size-h3: clamp(1.56rem, 0.36vw + 1.47rem, 1.76rem);
+  --font-size-h2: clamp(1.95rem, 0.44vw + 1.84rem, 2.2rem);
+  --font-size-h1: clamp(2.44rem, 0.55vw + 2.3rem, 2.75rem);
+}
+
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
 
 @layer base {
 
     body {
-        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        font-size: var(--font-size-base);
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        @apply text-gray-800;
+    }
+
+    :--heading {
+      @apply font-extrabold;
+    }
+
+    h1 {
+      font-size: var(--font-size-h1);
+      @apply font-black;
+    }
+
+    h2 {
+      font-size: var(--font-size-h2);
+    }
+
+    h3 {
+      font-size: var(--font-size-h3);
+    }
+
+    h4 {
+      font-size: var(--font-size-h4);
     }
 }
 
