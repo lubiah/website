@@ -15,4 +15,5 @@ declare interface ArticleMeta {
 	excerpt: string;
 	date: Date;
 	updated?: Date;
+	slug: string;
 }
