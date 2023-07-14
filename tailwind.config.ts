@@ -9,7 +9,11 @@ const config: Config = {
 		colors: {
 			gray: COLOURS.neutral
 		},
-		extend: {}
+		extend: {
+			lineHeight: {
+				tighter: "1.15"
+			}
+		}
 	},
 
 	plugins: [forms]
