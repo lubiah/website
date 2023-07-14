@@ -1,0 +1,8 @@
+pre-commit:
+  commands:
+    prettier:
+      run: pnpm prettier --plugin-search-dir . --write {staged_files} && git add {staged_files}
+    
+    eslint:
+      glob: "*.{js,ts,svelte}"
+      run: pnpm eslint {staged_files} && git add {staged_files}
