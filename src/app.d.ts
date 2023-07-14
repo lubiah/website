@@ -9,4 +9,10 @@ declare global {
 	}
 }
 
-export {};
+declare interface ArticleMeta {
+	title: string;
+	description: string;
+	excerpt: string;
+	date: Date;
+	updated?: Date;
+}
