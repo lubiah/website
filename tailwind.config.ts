@@ -6,9 +6,6 @@ const config: Config = {
 	content: ["./src/**/*.{html,js,svelte,ts}"],
 
 	theme: {
-		maxWidth: {
-			prose: "75ch"
-		},
 		colors: {
 			gray: COLOURS.neutral
 		},
