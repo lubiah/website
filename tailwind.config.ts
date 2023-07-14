@@ -1,5 +1,6 @@
-import forms from "@tailwindcss/forms";
 import type { Config } from "tailwindcss";
+import forms from "@tailwindcss/forms";
+import COLOURS from "tailwindcss/colors";
 
 const config: Config = {
 	content: ["./src/**/*.{html,js,svelte,ts}"],
@@ -7,6 +8,9 @@ const config: Config = {
 	theme: {
 		maxWidth: {
 			prose: "75ch"
+		},
+		colors: {
+			gray: COLOURS.neutral
 		},
 		extend: {}
 	},
