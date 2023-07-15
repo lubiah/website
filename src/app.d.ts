@@ -16,6 +16,12 @@ declare interface ArticleMeta {
 	date: Date;
 	updated?: Date;
 	slug: string;
+	readingTime: {
+		text: string;
+		minutes: number;
+		time: number;
+		words: number;
+	};
 }
 
 declare module "*.svg?component" {

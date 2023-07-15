@@ -42,8 +42,8 @@ devDependencies:
     specifier: ^0.11.0
     version: 0.11.0(svelte@4.0.5)
   mdsvex-reading-time:
-    specifier: ^1.0.0
-    version: 1.0.0(typescript@5.1.6)(vite@4.4.3)
+    specifier: ^1.0.1
+    version: 1.0.1(typescript@5.1.6)(vite@4.4.3)
   postcss:
     specifier: ^8.4.24
     version: 8.4.26
@@ -2524,8 +2524,8 @@ packages:
     resolution: {integrity: sha512-GaqWWShW4kv/G9IEucWScBx9G1/vsFZZJUO+tD26M8J8z3Kw5RDQjaoZe03YAClgeS/SWPOcb4nkFBTEi5DUEA==}
     dev: true
 
-  /mdsvex-reading-time@1.0.0(typescript@5.1.6)(vite@4.4.3):
-    resolution: {integrity: sha512-K31+lSgctxrYguHw7rBzvb8CNhWFda+cgaOzYa++Iul2Y9NTrTeNxIWauYYJJJH4Qv1zXOFrBYRt029ltl8wQg==}
+  /mdsvex-reading-time@1.0.1(typescript@5.1.6)(vite@4.4.3):
+    resolution: {integrity: sha512-VHMDGP0d0wnpJEdxbIKXKq3966BClJ4HzqiHbiZaMg6LCHrQ2QTa4ruyA7wYsHGP/+mmHKCryowkoF2F8KoLbg==}
     dependencies:
       reading-time: 1.5.0
       unist-util-visit: 5.0.0
