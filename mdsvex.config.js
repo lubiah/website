@@ -1,5 +1,7 @@
 import { defineMDSveXConfig as defineConfig } from "mdsvex";
 
+import readingTime from "mdsvex-reading-time";
+
 const config = defineConfig({
 	extensions: [".md"],
 
@@ -7,7 +9,7 @@ const config = defineConfig({
 		dashes: "oldschool"
 	},
 
-	remarkPlugins: [],
+	remarkPlugins: [readingTime],
 	rehypePlugins: []
 });
 
