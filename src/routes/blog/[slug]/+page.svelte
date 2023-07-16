@@ -17,7 +17,7 @@
 
 <div class="px-4 py-[72px] mb-[72px] bg-gray-100">
 	<div class="max-w-screen-laptop mx-auto">
-		<h1>{data.metadata.title}</h1>
+		<h1 class="my-0">{data.metadata.title}</h1>
 		<ul class="text-sm mt-[48px] flex flex-col gap-y-2">
 			<li class="flex items-center gap-2">
 				<CalendarIcon width="16" height="16" />
