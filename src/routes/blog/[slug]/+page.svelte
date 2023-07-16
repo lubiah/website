@@ -15,10 +15,14 @@
 
 <Head title={SEO.title} description={SEO.description} />
 
-<div class="px-4 py-[72px] mb-[72px] bg-gray-100">
+<div
+	class="px-4 py-[72px] mb-[72px] tablet:mb-[84px] laptop:mb-[96px] tablet:py-[84px] laptop:py-[96px] bg-gray-100"
+>
 	<div class="max-w-screen-laptop mx-auto">
 		<h1 class="my-0">{data.metadata.title}</h1>
-		<ul class="text-sm mt-[48px] flex flex-col gap-y-2">
+		<ul
+			class="text-sm mt-[48px] tablet:mt-[56px] laptop:mt-[64px] flex flex-col tablet:flex-row gap-y-2 tablet:gap-x-4 laptop:gap-x-6"
+		>
 			<li class="flex items-center gap-2">
 				<CalendarIcon width="16" height="16" />
 				<time datetime={data.metadata.date.toString()}>{formatDate(data.metadata.date)}</time>
