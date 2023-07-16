@@ -7,7 +7,7 @@ tags:
   - github
 ---
 
-I have always used GitHub since I first started coding. Almost every developer on the planet uses Github for something. The benefit of using it is that it simplifies version control. Every developer understands the value of version control, and GitHub makes our lives easier. I won't benefits of using GitHub, so let me get right to the point.
+I have always used GitHub since I first started coding. Almost every developer on the planet uses Github for something. The benefit of using it is that it simplifies version control. Every developer understands the value of version control, and GitHub makes our lives easier. I won't delve into the benefits of using GitHub, so let me get right to the point.
 
 ## History of GitHub achievements
 
