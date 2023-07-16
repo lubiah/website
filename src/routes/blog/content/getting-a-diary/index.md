@@ -40,6 +40,6 @@ So, after learning the PigPen cypher, I never tried it in my diary. I wanted to 
 
 ## Wrapping up
 
-I think having a diary is very useful. There are many advantages to using it. It helps to improve your memory. Imagine reading your childhood diary when you are grown up _(that feeling you get:smile:)_.
+I think having a diary is very useful. There are many advantages to using it. It helps to improve your memory. Imagine reading your childhood diary when you are grown up _(that feeling you get:blush:)_.
 
 If you don’t have one, it would be a great idea to get one and start writing. Who knows, you could become the next [Anne Frank](https://en.wikipedia.org/wiki/Anne_Frank).
