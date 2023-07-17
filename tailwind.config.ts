@@ -6,8 +6,10 @@ const config: Config = {
 	content: ["./src/**/*.{html,js,svelte,ts}"],
 
 	theme: {
+		container: {
+			center: true
+		},
 		screens: {
-			"tablet-sm": "640px",
 			tablet: "768px",
 			laptop: "1024px",
 			desktop: "1280px",
