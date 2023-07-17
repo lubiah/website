@@ -22,6 +22,13 @@ declare interface ArticleMeta {
 		time: number;
 		words: number;
 	};
+	/** Contains the headings of the blog post */
+	headings: Array<{
+		id: string;
+		depth: number;
+		value: string;
+		children?: ArticleMeta["headings"];
+	}>;
 }
 
 declare module "*.svg?component" {
