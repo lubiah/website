@@ -14,6 +14,7 @@ declare interface ArticleMeta {
 	description: string;
 	excerpt: string;
 	date: Date;
+	tags: Array<string>;
 	updated?: Date;
 	slug: string;
 	readingTime: {
