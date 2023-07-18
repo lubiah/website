@@ -18,3 +18,13 @@ export const getArticlesMeta = (): ArticleMeta[] => {
 
 	return files;
 };
+
+/**
+ * Returns all the tags for all the blog posts
+ */
+export const getTags = (): Array<string> => {
+	const articles = getArticlesMeta();
+	const tags: Set<string> = new Set();
+	articles.forEach((articles) => articles.tags.forEach((tag) => tags.add(tag)));
+	return Array.from(tags);
+};
