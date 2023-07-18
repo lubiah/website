@@ -43,9 +43,7 @@
 			<svelte:component this={data.component} />
 		</article>
 		{#if data.metadata.headings}
-			{#await import("./components/toc")}
-				Loading...
-			{:then TOC}
+			{#await import("./components/toc") then TOC}
 				<aside class="text-sm text-gray-600 sticky top-[20%] h-fit hidden laptop:block">
 					<p class="mb-2 mt-0 font-bold">Table Of Contents</p>
 					<svelte:component this={TOC.default} headings={data.metadata.headings} />

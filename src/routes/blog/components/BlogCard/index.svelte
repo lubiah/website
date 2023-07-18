@@ -12,8 +12,8 @@
 
 <a href="/blog/{slug}" class="flex flex-col gap-y-1">
 	<h2 class="text-xl font-bold my-0">{title}</h2>
-	<p class="text-gray-500 text-base line-clamp-3 flex-1">{excerpt}</p>
-	<div class="flex text-gray-500 text-sm justify-between">
+	<p class="text-gray-500 text-sm laptop:text-base line-clamp-3 flex-1">{excerpt}</p>
+	<div class="flex text-gray-500 text-sm justify-between laptop:justify-start laptop:gap-x-6">
 		<span class="flex items-center gap-x-2">
 			<CalendarIcon width={16} height={16} />
 			<time>{formatDate(date)}</time>
