@@ -31,6 +31,9 @@ const config: Config = {
 		extend: {
 			lineHeight: {
 				tighter: "1.15"
+			},
+			spacing: {
+				18: "4.5rem"
 			}
 		}
 	},
