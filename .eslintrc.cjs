@@ -13,7 +13,7 @@ module.exports = {
 		ecmaVersion: 2020,
 		extraFileExtensions: [".svelte"]
 	},
-	
+
 	globals: {
 		ArticleMeta: "writable"
 	},
@@ -29,6 +29,6 @@ module.exports = {
 			parserOptions: {
 				parser: "@typescript-eslint/parser"
 			}
-		},
-	],
+		}
+	]
 };
