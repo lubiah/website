@@ -1,9 +1,9 @@
 <script lang="ts">
-	import type { PageData } from "./$types";
+	import type { PageServerData } from "./$types";
 	import Card from "$components/BlogCard";
 	import Head from "svelte-seo";
 
-	export let data: PageData;
+	export let data: PageServerData;
 
 	const SEO = {
 		title: `The Garden - My thoughts and notes • Lubiah`,
@@ -16,7 +16,7 @@
 
 <main class="px-4 max-w-screen-laptop mx-auto">
 	<div class="my-18 tablet:my-[84px] laptop:my-[96px]">
-		<h1 class="my-0 mb-4">The Garden</h1>
+		<h1 class="my-0 mb-2">The Garden</h1>
 		<p class="text-gray-700 py-0">
 			My thoughts and notes on programming and other topics which I find interesting.
 		</p>
