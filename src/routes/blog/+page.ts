@@ -1,10 +1,11 @@
-import { getArticlesMeta } from ".";
+import { getArticlesMeta, getTags } from ".";
 import type { PageLoad } from "./$types";
 
 export const load = (() => {
 	const articles = getArticlesMeta();
-
+	const tags = getTags();
 	return {
-		articles
+		articles,
+		tags
 	};
 }) satisfies PageLoad;
