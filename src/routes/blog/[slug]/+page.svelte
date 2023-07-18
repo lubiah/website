@@ -4,7 +4,6 @@
 	import ClockIcon from "$icons/clock.svg?component";
 	import { formatDate } from "$utils";
 	import Head from "svelte-seo";
-
 	export let data: PageData;
 
 	const SEO = {
@@ -13,12 +12,15 @@
 	};
 </script>
 
-<Head title={SEO.title} description={SEO.description} />
-
+<Head
+	title={SEO.title}
+	description={SEO.description}
+	twitter={{ title: SEO.title, description: SEO.description }}
+/>
 <div
-	class="px-4 py-[72px] mb-[72px] tablet:mb-[84px] laptop:mb-[96px] tablet:py-[84px] laptop:py-[96px] bg-gray-100"
+	class="py-[72px] mb-[72px] tablet:mb-[84px] laptop:mb-[96px] tablet:py-[84px] laptop:py-[96px] bg-gray-100"
 >
-	<div class="max-w-screen-laptop mx-auto">
+	<div class="px-4 mx-auto max-w-screen-laptop">
 		<h1 class="my-0">{data.metadata.title}</h1>
 		<ul
 			class="text-sm mt-[48px] tablet:mt-[56px] laptop:mt-[64px] flex flex-col tablet:flex-row gap-y-2 tablet:gap-x-4 laptop:gap-x-6"
@@ -35,8 +37,26 @@
 	</div>
 </div>
 
-<div class="max-w-screen-laptop mx-auto">
-	<article class="max-w-prose px-4">
-		<svelte:component this={data.component} />
-	</article>
+<div class="px-4 mx-auto max-w-screen-laptop">
+	<div class="flex flex-row justify-between tablet:gap-[30px]">
+		<article class="max-w-prose">
+			<svelte:component this={data.component} />
+		</article>
+		{#if data.metadata.headings}
+			{#await import("./components/toc")}
+				Loading...
+			{:then TOC}
+				<aside class="text-sm text-gray-600 sticky top-[20%] h-fit hidden laptop:block">
+					<p class="mb-2 mt-0 font-bold">Table Of Contents</p>
+					<svelte:component this={TOC.default} headings={data.metadata.headings} />
+				</aside>
+			{/await}
+		{/if}
+	</div>
 </div>
+
+<style lang="postcss">
+	article :global(> :first-child) {
+		@apply mt-0;
+	}
+</style>
