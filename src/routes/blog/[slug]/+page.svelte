@@ -45,7 +45,7 @@
 		{#if data.metadata.headings}
 			{#await import("./components/toc") then TOC}
 				<aside class="text-sm text-gray-600 sticky top-[20%] h-fit hidden laptop:block">
-					<p class="mb-2 mt-0 font-bold">Table Of Contents</p>
+					<p class="mb-2 mt-0 font-bold border-b border-gray-300 pb-1">Table Of Contents</p>
 					<svelte:component this={TOC.default} headings={data.metadata.headings} />
 				</aside>
 			{/await}
@@ -54,7 +54,13 @@
 </div>
 
 <style lang="postcss">
-	article :global(> :first-child) {
-		@apply mt-0;
+	article {
+		& :global(> :first-child) {
+			@apply mt-0;
+		}
+
+		& :global(pre) {
+			@apply -mx-4 rounded-none p-4 laptop:-mx-0 tablet:p-2 laptop:rounded-sm;
+		}
 	}
 </style>
