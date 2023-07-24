@@ -1,5 +1,5 @@
 import { getArticlesMeta, getTags } from ".";
-import type { PageLoad } from "./$types";
+import type { PageServerLoad } from "./$types";
 
 export const load = (() => {
 	const articles = getArticlesMeta();
@@ -8,4 +8,4 @@ export const load = (() => {
 		articles,
 		tags
 	};
-}) satisfies PageLoad;
+}) satisfies PageServerLoad;
