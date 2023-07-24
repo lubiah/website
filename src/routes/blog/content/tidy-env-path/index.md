@@ -17,7 +17,7 @@ Just now, while I was looking through my environment variables for no apparent r
   <figcaption>I uninstalled <a href="https://hyper.is/" target="_blank">Hyper terminal</a> a long time ago but its path is still in my environment variable</figcaption>
 </figure>
 
-## What is Environment Variable
+## What is an Environment Variable
 
 > An environment variable is a dynamic-named value that can affect the way running processes will behave on a computer. They are part of the environment in which a process runs. For example, a running process can query the value of the TEMP environment variable to discover a suitable location to store temporary files, or the HOME or USERPROFILE variable to find the directory structure owned by the user running the process
 
@@ -72,13 +72,16 @@ end
 ```
 
 First of all, we imported the 'registry' module. Then we assigned the environment variable `ENV['path']` to a variable called `paths`. This returns a string.
+
 Then we split it by ';' since all the paths in the variable are concatenated and separated by ';'. This will turn the `paths` variable into an array.
 We then created a new array called `valid` (_this is the array which will hold the valid paths_).
 The `valid_string` variable will also hold the stringified version of the `valid` array.
+
 Then to the iteration, we iterate through each item in the `paths` array, and then we use `Dir.exists?` to check if the path exists, if it does, it is added to the `valid` array.
 Then we iterate through the `valid` array and add each path to the `valid_string` variable.
 
-In the next part, we open the registry and access the environment, we then assign our new environment variable.
+In the next part, we open the registry and access the environment, we then assign our new environment variable and that's all.
+Our environment variable is good as new😊.
 
 :::info
 You need to restart your computer to see the changes
