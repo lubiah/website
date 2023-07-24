@@ -4,9 +4,13 @@
 	import Head from "svelte-seo";
 
 	export let data: PageServerData;
+
+	const SEO = {
+		title: `Content under ${data.tag} • Lubiah`
+	};
 </script>
 
-<Head noindex={true} nofollow={true} />
+<Head title={SEO.title} noindex={true} nofollow={true} />
 
 <main class="max-w-screen-laptop mx-auto px-4">
 	<div class="my-18 tablet:my-21 laptop:my-24">
