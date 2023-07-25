@@ -14,7 +14,6 @@
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 
 @layer base {
-
 	body {
 		font-size: var(--font-size-base);
 		text-rendering: optimizeLegibility;
@@ -76,15 +75,16 @@
 		}
 
 		@apply relative border-t-2 border-b-2 [&_>:first-child]:mt-0 py-4 my-4 text-lg;
-		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-family: Georgia, "Times New Roman", Times, serif;
 	}
 
 	p {
 		@apply mt-[1.6rem];
 	}
 
-	pre, code {
-		font-family:'Fira Code','Courier New', Courier, monospace;
+	pre,
+	code {
+		font-family: "Fira Code", "Courier New", Courier, monospace;
 	}
 
 	pre {
@@ -97,9 +97,35 @@
 	code {
 		@apply before:content-['`'] after:content-['`'] text-[#014003];
 	}
-
 }
 
+.note {
+	@apply rounded-sm p-2 my-4 max-w-max;
+
+	& .header {
+		@apply flex gap-x-2 items-center;
+	}
+
+	& .title {
+		@apply font-semibold;
+	}
+
+	& .content {
+		@apply mt-2;
+		& :first-child {
+			@apply mt-0;
+		}
+	}
+}
+
+.note--info {
+	background-position-x: 100%;
+	background-image: url("data:image/svg+xml,%3Csvg width='149' height='149' viewBox='0 0 149 149' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.4' %3E%3Cpath d='M74.5 88.4688C78.3559 88.4688 81.4844 85.3403 81.4844 81.4844V44.2344C81.4844 40.393 78.3705 37.25 74.5 37.25C70.6295 37.25 67.5156 40.393 67.5156 44.2344V81.4844C67.5156 85.3549 70.6586 88.4688 74.5 88.4688ZM74.5 98.1014C69.4479 98.1014 65.3504 102.199 65.3504 107.251C65.3621 112.303 69.4363 116.406 74.5 116.406C79.5637 116.406 83.6495 112.309 83.6495 107.257C83.6379 102.205 79.5637 98.1014 74.5 98.1014Z' fill='%23A9AFE5'/%3E%3Cpath opacity='0.4' d='M74.5 0C33.3504 0 0 33.3504 0 74.5C0 115.65 33.3504 149 74.5 149C115.65 149 149 115.65 149 74.5C149 33.3504 115.65 0 74.5 0ZM67.5156 44.2344C67.5156 40.393 70.6586 37.25 74.5 37.25C78.3414 37.25 81.4844 40.3784 81.4844 44.2344V81.4844C81.4844 85.3403 78.356 88.4688 74.5 88.4688C70.644 88.4688 67.5156 85.3549 67.5156 81.4844V44.2344ZM74.5 116.406C69.448 116.406 65.3505 112.309 65.3505 107.257C65.3505 102.205 69.4451 98.1072 74.5 98.1072C79.5549 98.1072 83.6495 102.205 83.6495 107.257C83.6379 112.303 79.5637 116.406 74.5 116.406Z' fill='%23A9AFE5'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_798_1294'%3E%3Crect width='149' height='149' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+	@apply bg-info-50 bg-no-repeat;
+	& .title {
+		@apply text-info-500;
+	}
+}
 
 /* inter-regular - latin */
 @font-face {
@@ -153,8 +179,8 @@
 /* fira-code-regular - latin */
 @font-face {
 	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-	font-family: 'Fira Code';
+	font-family: "Fira Code";
 	font-style: normal;
 	font-weight: 400;
-	src: url('/fonts/fira-code-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+	src: url("/fonts/fira-code-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}

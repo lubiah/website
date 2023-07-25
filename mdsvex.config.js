@@ -3,6 +3,10 @@ import { defineMDSveXConfig as defineConfig } from "mdsvex";
 import readingTime from "mdsvex-reading-time";
 import remarkEmoji from "remark-emoji";
 import remarkHeadings from "@sveltinio/remark-headings";
+import remarkDirective from "remark-directive";
+import remarkAsides from "./remarkPlugins/asides/index.js";
+import remarkFrontmatter from "remark-frontmatter";
+import remarkParse from "remark-parse";
 
 import rehypeSlug from "rehype-slug";
 
@@ -13,7 +17,16 @@ const config = defineConfig({
 		dashes: "oldschool"
 	},
 
-	remarkPlugins: [readingTime, remarkEmoji, [remarkEmoji, { accessible: true }], remarkHeadings],
+	remarkPlugins: [
+		remarkParse,
+		remarkFrontmatter,
+		remarkDirective,
+		readingTime,
+		remarkEmoji,
+		[remarkEmoji, { accessible: true }],
+		remarkHeadings,
+		remarkAsides
+	],
 	rehypePlugins: [rehypeSlug]
 });
 
