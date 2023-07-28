@@ -16,12 +16,7 @@
 	title={SEO.title}
 	description={SEO.description}
 	twitter={{ title: SEO.title, description: SEO.description }}
->
-	<link
-		rel="stylesheet"
-		href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-a11y-dark.css"
-	/>
-</Head>
+/>
 <div
 	class="py-[72px] mb-[72px] tablet:mb-[84px] laptop:mb-[96px] tablet:py-[84px] laptop:py-[96px] bg-gray-100"
 >
@@ -42,7 +37,7 @@
 	</div>
 </div>
 
-<div class="px-4 mx-auto max-w-screen-laptop">
+<div class="px-4 mx-auto max-w-screen-laptop my-[100px]">
 	<div class="flex flex-row justify-between tablet:gap-[30px]">
 		<article class="max-w-prose">
 			<svelte:component this={data.component} />

@@ -111,10 +111,7 @@
 	}
 
 	& .content {
-		@apply mt-2;
-		& :first-child {
-			@apply mt-0;
-		}
+		@apply mt-2 [&>_:first-child]:mt-0;
 	}
 }
 

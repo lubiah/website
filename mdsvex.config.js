@@ -6,6 +6,7 @@ import remarkHeadings from "@sveltinio/remark-headings";
 import remarkDirective from "remark-directive";
 import remarkAsides from "./remarkPlugins/asides/index.js";
 import remarkFrontmatter from "remark-frontmatter";
+import remarkHighlighter from "remark-highlighter";
 import remarkParse from "remark-parse";
 
 import rehypeSlug from "rehype-slug";
@@ -23,6 +24,7 @@ const config = defineConfig({
 		remarkDirective,
 		readingTime,
 		remarkEmoji,
+		[remarkHighlighter, { theme: "dracula" }],
 		[remarkEmoji, { accessible: true }],
 		remarkHeadings,
 		remarkAsides

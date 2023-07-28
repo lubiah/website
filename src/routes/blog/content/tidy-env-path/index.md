@@ -83,6 +83,6 @@ Then we iterate through the `valid` array and add each path to the `valid_string
 In the next part, we open the registry and access the environment, we then assign our new environment variable and that's all.
 Our environment variable is good as new😊.
 
-:::info
+:::info[Quick Tip]
 You need to restart your computer to see the changes
 :::
