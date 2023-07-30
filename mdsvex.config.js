@@ -24,7 +24,7 @@ const config = defineConfig({
 		remarkDirective,
 		readingTime,
 		remarkEmoji,
-		[remarkHighlighter, { theme: "dracula" }],
+		[remarkHighlighter, { theme: "github-light" }],
 		[remarkEmoji, { accessible: true }],
 		remarkHeadings,
 		remarkAsides

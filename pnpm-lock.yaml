@@ -78,8 +78,8 @@ devDependencies:
     specifier: ^4.0.1
     version: 4.0.1
   remark-highlighter:
-    specifier: ^0.0.0
-    version: 0.0.0
+    specifier: ^0.0.1
+    version: 0.0.1
   remark-parse:
     specifier: ^10.0.2
     version: 10.0.2
@@ -3933,8 +3933,8 @@ packages:
       unified: 10.1.2
     dev: true
 
-  /remark-highlighter@0.0.0:
-    resolution: {integrity: sha512-xBu3pH7KZ3CFslS/N1Zeas2YrD8E1BZDx3sQgyOrMy8T+nzm0kz0ugtXyeDrLmDgPIvEerF4QTigIGsYg486UA==}
+  /remark-highlighter@0.0.1:
+    resolution: {integrity: sha512-1wVqDLgOIcGh8C4WnaaH0pD9zQ2N8tLJneqjdul1gtc+Pm7C3uEkrtHteVR1iXrFOy+2OqluRjQZav1ZQ/u5rQ==}
     dependencies:
       '@types/mdast': 4.0.0
       md-attr-parser: 1.3.0
