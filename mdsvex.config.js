@@ -7,6 +7,8 @@ import remarkDirective from "remark-directive";
 import remarkAsides from "./remarkPlugins/asides/index.js";
 import remarkFrontmatter from "remark-frontmatter";
 import remarkHighlighter from "remark-highlighter";
+import remarkGfm from "remark-gfm";
+import remarkBreaks from "remark-breaks";
 import remarkParse from "remark-parse";
 
 import rehypeSlug from "rehype-slug";
@@ -23,8 +25,18 @@ const config = defineConfig({
 		remarkFrontmatter,
 		remarkDirective,
 		readingTime,
+		remarkGfm,
+		remarkBreaks,
 		remarkEmoji,
-		[remarkHighlighter, { theme: "github-light" }],
+		[
+			remarkHighlighter,
+			{
+				theme: "dracula",
+				inlineCode: {
+					spaceSubstitution: true
+				}
+			}
+		],
 		[remarkEmoji, { accessible: true }],
 		remarkHeadings,
 		remarkAsides
