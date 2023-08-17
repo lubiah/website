@@ -1,0 +1,52 @@
+diff --git a/dist/browser-es.js b/dist/browser-es.js
+index b3e7b68016dc7aba20357e43ca011ae8f31901d8..c3f6eca40799884f97a507d5a652b9c8677e7096 100644
+--- a/dist/browser-es.js
++++ b/dist/browser-es.js
+@@ -19472,7 +19472,7 @@ function transform(
+ 		.use(remarkParse)
+ 		.use(mdsvex_parser)
+ 		.use(remarkExternalLinks, { target: false, rel: ['nofollow'] })
+-		.use(escape_code, { blocks: !!highlight })
++		//.use(escape_code, { blocks: !!highlight })
+ 		.use(remarkFrontmatter, [{ type: fm_opts.type, marker: fm_opts.marker }])
+ 		.use(parse_frontmatter, { parse: fm_opts.parse, type: fm_opts.type });
+ 
+diff --git a/dist/browser-umd.js b/dist/browser-umd.js
+index 8c74b99f0155e37e8a1eb906fee3dbce309f29da..e7616596f24cca54c9aa7d3377604433ea268a6c 100644
+--- a/dist/browser-umd.js
++++ b/dist/browser-umd.js
+@@ -19476,7 +19476,7 @@
+   		.use(remarkParse)
+   		.use(mdsvex_parser)
+   		.use(remarkExternalLinks, { target: false, rel: ['nofollow'] })
+-  		.use(escape_code, { blocks: !!highlight })
++  		//.use(escape_code, { blocks: !!highlight })
+   		.use(remarkFrontmatter, [{ type: fm_opts.type, marker: fm_opts.marker }])
+   		.use(parse_frontmatter, { parse: fm_opts.parse, type: fm_opts.type });
+ 
+diff --git a/dist/main.cjs.js b/dist/main.cjs.js
+index 651956e4cc1953f87dcdbf44a162500f23b33923..b22f6737beaa361938334152750669be92507f90 100644
+--- a/dist/main.cjs.js
++++ b/dist/main.cjs.js
+@@ -25828,7 +25828,7 @@ function transform(
+ 		.use(remarkParse)
+ 		.use(mdsvex_parser)
+ 		.use(remarkExternalLinks, { target: false, rel: ['nofollow'] })
+-		.use(escape_code, { blocks: !!highlight })
++		//.use(escape_code, { blocks: !!highlight })
+ 		.use(remarkFrontmatter, [{ type: fm_opts.type, marker: fm_opts.marker }])
+ 		.use(parse_frontmatter, { parse: fm_opts.parse, type: fm_opts.type });
+ 
+diff --git a/dist/main.es.js b/dist/main.es.js
+index 58b75127237848b2d462c8e6d2dc53d8b82ac94b..9848193f9dff6cb506bb214dac18a9548b40e6c7 100644
+--- a/dist/main.es.js
++++ b/dist/main.es.js
+@@ -25798,7 +25798,7 @@ function transform(
+ 		.use(remarkParse)
+ 		.use(mdsvex_parser)
+ 		.use(remarkExternalLinks, { target: false, rel: ['nofollow'] })
+-		.use(escape_code, { blocks: !!highlight })
++		//.use(escape_code, { blocks: !!highlight })
+ 		.use(remarkFrontmatter, [{ type: fm_opts.type, marker: fm_opts.marker }])
+ 		.use(parse_frontmatter, { parse: fm_opts.parse, type: fm_opts.type });
+ 
