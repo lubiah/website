@@ -74,8 +74,8 @@ devDependencies:
     specifier: ^2.10.1
     version: 2.10.1(prettier@2.8.8)(svelte@4.2.0)
   rehype-highlighter:
-    specifier: 0.0.1-beta
-    version: 0.0.1-beta
+    specifier: 0.0.2-beta
+    version: 0.0.2-beta
   rehype-slug:
     specifier: ^5.1.0
     version: 5.1.0
@@ -4111,8 +4111,8 @@ packages:
     resolution: {integrity: sha512-onYyVhBNr4CmAxFsKS7bz+uTLRakypIe4R+5A824vBSkQy/hB3fZepoVEf8OVAxzLvK+H/jm9TzpI3ETSm64Kg==}
     dev: true
 
-  /rehype-highlighter@0.0.1-beta:
-    resolution: {integrity: sha512-3pNK3zogJIVhc7toMl21krEoa5KOcYi34hgAXOEwWXJOrfk4YDzGZBCzygPCMZiEhSrf5UqMayh1EGL4KI7vAg==}
+  /rehype-highlighter@0.0.2-beta:
+    resolution: {integrity: sha512-VNY+1zfez1O2/rJdiHEPFo9i9OSAJJANBRih36jgK8VrTUpD/2R97MnqIhIHdZUxJ1INScbHPzJxzJX55zCiNw==}
     dependencies:
       hast-util-from-parse5: 8.0.1
       parse5: 7.1.2
