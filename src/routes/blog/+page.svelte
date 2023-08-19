@@ -22,7 +22,7 @@
 		</p>
 	</div>
 	<div>
-		<ul class="flex gap-x-4 mb-[24px] tablet:mb-[28px]">
+		<ul class="flex m-0 p-0 overflow-x-auto gap-x-4 mb-[24px] tablet:mb-[28px]">
 			{#each data.tags as tag}
 				<a
 					href="/blog/tags/{tag}"

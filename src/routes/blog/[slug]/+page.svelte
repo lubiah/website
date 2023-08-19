@@ -23,7 +23,7 @@
 	<div class="px-4 mx-auto max-w-screen-laptop">
 		<h1 class="my-0">{data.metadata.title}</h1>
 		<ul
-			class="text-sm mt-[48px] tablet:mt-[56px] laptop:mt-[64px] flex flex-col tablet:flex-row gap-y-2 tablet:gap-x-4 laptop:gap-x-6"
+			class="text-sm mt-[48px] px-0 tablet:mt-[56px] laptop:mt-[64px] flex flex-col tablet:flex-row gap-y-2 tablet:gap-x-4 laptop:gap-x-6"
 		>
 			<li class="flex items-center gap-2">
 				<CalendarIcon width="16" height="16" />

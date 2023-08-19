@@ -16,6 +16,7 @@ export const getArticlesMeta = (): ArticleMeta[] => {
 		files.push(metadata);
 	}
 
+	files.sort((a, b) => b.date.getTime() - a.date.getTime());
 	return files;
 };
 
