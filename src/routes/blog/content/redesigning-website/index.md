@@ -8,25 +8,25 @@ tags:
 date: 2021-04-16
 ---
 
-Not only do buildings require upgrades on a regular basis, but so do websites. With new colours, libraries, and whatever else you may imagine...
+Not only do buildings require upgrades regularly, but so do websites. With new colours, libraries, and whatever else you may imagine...
 
 ## Why re-design
 
 I bought my first domain in a hurry. Because I didn't like the domain name, I opted to switch to a different one. I intended to move to the new domain in January of this year, but school got in the way, so I had to postpone it.
 
-I couldn't migrate to my new domain because of the design of my old website. Besides, I was new to web development when I made my first website, so it was really awful. I was simply copying and pasting nearly everything from the internet. I didn't even know what JavaScript was, and I was terrible with CSS, so you can guess how "uglified" it was.
+I couldn't migrate to my new domain because of the design of my old website. Besides, I was new to web development when I made my first website, so it was awful. I was simply copying and pasting nearly everything from the internet. I didn't even know what JavaScript was, and I was terrible with CSS, so you can guess how "uglified" it was.
 
 ## The plan
 
-Whiles in school, I designed how I wanted my website to be in my mind. I know I should have written everything, but I didn’t. That actually led to an increase in days spent on the re-design.
+Whiles in school, I designed how I wanted my website to be in my mind. I know I should have written everything, but I didn’t. That led to an increase in days spent on the re-design.
 
 Features I wanted on my new website:
 
 - Adding a search bar to my [blog](https://www.kudadam.com/blog) and [tools](https://www.kudadam.com/toolz) section.
-  Search bars are cool, it will helps users and readers to find what ever they want easily. You seriously don't want to frustrate your readers, do you?
+  Search bars are cool, they will help users and readers to find whatever they want easily. You seriously don't want to frustrate your readers, do you?
 
 - Reducing the use of JavaScript libraries
-  Whiles I was reading on how to reduce page load times, I read that we must reduce the number of scripts we import in our file. Obviously, the page won't finish loading until it has loaded all the maybe large JavaScript files and your reader will be staring at a blank screen and he will surely just click the back button.
+  Whiles I was reading about how to reduce page load times, I read that we must reduce the number of scripts we import into our files. The page won't finish loading until it has loaded all the maybe large JavaScript files and your reader will be staring at a blank screen and he will surely just click the back button.
 
   So I made a drastic decrease in the number of JavaScript files I used and for the ones I decided to keep, I decided to use their minified version
 
@@ -34,7 +34,7 @@ Features I wanted on my new website:
   Well, I wasn't sure whether I was going to implement this or not.
 
 - Moving away from Disqus comments
-  I didn't want third parties to handle my comments section again. Well, because of privacy issues and etc.
+  I didn't want third parties to handle my comments section again. Well, because of privacy issues, etc.
 
 - and many more...
 
@@ -42,9 +42,9 @@ Features I wanted on my new website:
 
 I started on March 25, we had vacated by then. I created a new folder and as usual, `:shell:git init`. It's very important to use git. The old website was designed in Bootstrap 4 so I decided to use [Material Design Bootstrap 5 (MDB)](https://mdbootstrap.com/) this time. I started with the homepage.
 
-### Starting with Homepage
+### Starting with the homepage
 
-The homepage wasn't much work at all. Small text and plenty images (relevant) did the trick. I wasn't writing a story so I had to keep the homepage as simple as possible. You can read about the importance of adding images to your website over [here](https://www.logicdesign.co.uk/blog/4-reasons-images-important-website/). I also added animations to make it catchy. I used a JavaScript library called [typeit.js](https://typeitjs.com) for the animations.
+The homepage wasn't much work at all. Small text and plenty of images (relevant) did the trick. I wasn't writing a story so I had to keep the homepage as simple as possible. You can read about the importance of adding images to your website over [here](https://www.logicdesign.co.uk/blog/4-reasons-images-important-website/). I also added animations to make it catchy. I used a JavaScript library called [typeit.js](https://typeitjs.com) for the animations.
 
 ### To the Blog...
 
@@ -56,9 +56,9 @@ All of the blog pages had to be moved to a MySQL database. I did not do it by my
 
 ### How the blog posts are rendered
 
-Since all the files were stored in a database, it meant that those files didn't exists physically on the server so a URL to a blog's file name will generate a 404 error. You wanna know the solution? I use [URL re-writing](https://www.smashingmagazine.com/2011/11/introduction-to-url-rewriting/).
+Since all the files were stored in a database, it meant that those files didn't exist physically on the server so a URL to a blog's file name will generate a 404 error. You wanna know the solution? I use [URL re-writing](https://www.smashingmagazine.com/2011/11/introduction-to-url-rewriting/).
 
-Well, it's simple, let's say a person visits this blog post through this URL https://www.kudadam.com/blog/redesigning-my-website. Under normal circumstance, it's going to generate a 404 error because there's no folder called "redesigning-my-website" in my blog folder. With URL re-writing, we will create an .htaccess file in our server root (works only if you are using Apache). Then we will write something like this
+Well, it's simple, let's say a person visits this blog post through this URL kudadam.com/blog/redesigning-my-website. Under normal circumstances, it's going to generate a 404 error because there's no folder called "redesigning-my-website" in my blog folder. With URL re-writing, we will create an .htaccess file in our server root (works only if you are using Apache). Then we will write something like this
 
 ```apache
 RewriteEngine On
@@ -96,7 +96,7 @@ It's simple, I modified the first python script I made to handle the blog files.
 
 #### Creating a new blog post...
 
-Whenever I want to create a new blog post, I just open my terminal and type in `:shell: kudadam create blog --title "Hello World" --description "Greeting the word" --category life` All the arguments starting with "--" are optional, meaning I can create a blog post without them.
+Whenever I want to create a new blog post, I just open my terminal and type in `:shell:kudadam create blog --title "Hello World" --description "Greeting the word" --category life` All the arguments starting with "--" are optional, meaning I can create a blog post without them.
 
 <img class="Sirv" data-src="https://ik.imagekit.io/kudadam/blog/redesigning_my_website/kudadam_cli_create.png" alt="" />
 
@@ -104,15 +104,15 @@ When I provide the title parameter, it checks to see if an article with the same
 
 #### Updating blog posts...
 
-When ever I finish writing a blog post, I don't also manually insert them into the database. I just run `kudadam update blog %blog_directory%` then tadaa...
+When ever I finish writing a blog post, I don't also manually insert them into the database. I just run `:shell:kudadam update blog %blog_directory%` then tadaa...
 
 <img class="Sirv d-block mx-auto" data-src="https://ik.imagekit.io/kudadam/blog/redesigning_my_website/kudadam_cli_update.png?q=100%" alt="" />
 
-It iterates over each file, then converts it's contents to HTML. It then minifies it and stores it in a database
+It iterates over each file, and then converts its contents to HTML. It then minifies it and stores it in a database.
 
 #### Uploading live to server
 
-When uploading the blog live to the server, I just `git commit -m "Message"` and `git push` to [Github](https://www.github.com). Then [deployhq](https://www.deployhq.com/) uploads the contents to my server and runs the same command. Then the blog is updated.
+When uploading the blog live to the server, I just `:shell:git commit -m "Message"` and `:shell:git push` to [Github](https://www.github.com). Then [deployhq](https://www.deployhq.com/) uploads the contents to my server and runs the same command. Then the blog is updated.
 
 ## Conclusion
 
